@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Phonebook</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <h1>The PhoneBook App</h1>
+
+    <!-- Form to add contact -->
+
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="text" id="phone" placeholder="Phone" required>
+      <input type="email" id="email" placeholder="Email">
+      <textarea id="note" placeholder="Note"></textarea>
+      <button id="add-contact-button">Add Contact</button>
+    </form>
+
+    <!--Search input-->
+
+    <input type="text" id="search-input" placeholder="Search by name">
+
+    <!--This button will display all contacts-->
+
+    <button id="display-all-button">Display All</button>
+
+    <!--List of contacts-->
+    <ul id="contact-list"></ul>
+
+  </div>
+
+    <script type="module" src="./contactListManager.js"></script>
+    <script type="module" src="./display.js"></script>
+    <script type="module" src="./search.js"></script>
+    <script type="module" src="./main.js"></script>
+
+</body>
+</html>
